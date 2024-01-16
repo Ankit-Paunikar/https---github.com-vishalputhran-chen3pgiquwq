@@ -1,12 +1,14 @@
-import React from 'react'
-import ReactDOMServer from 'react-dom/server'
-import App from './App'
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+// import App from "./App";
+
+import Caseboard from "./pages/Caseboard/index";
 
 export function render() {
   const html = ReactDOMServer.renderToString(
     <React.StrictMode>
-      <App />
+      <Caseboard />
     </React.StrictMode>
-  )
-  return { html }
+  );
+  return { html };
 }
